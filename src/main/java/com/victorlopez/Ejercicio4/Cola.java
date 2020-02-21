@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Cola<T> implements ICola<T> {
     private ArrayList<T> cola;
+    private final int INICIO = 0;
 
     /**
      * Constructor de la classe cola
@@ -45,13 +46,13 @@ public class Cola<T> implements ICola<T> {
     public T remove() {
         if (!isEmpty()){
             T aux = cola.get(0);
-            cola.remove(0);
+            cola.remove(INICIO);
             return aux;
         }
         return null;
     }
 
-    /**
+    /*
      * Método para saber el número de elementos de la cola
      * @return devuelve el numero de elementos de la cola
      */
@@ -67,7 +68,7 @@ public class Cola<T> implements ICola<T> {
     @Override
     public T peek() {
         if (!isEmpty()){
-            return cola.get(0);
+            return cola.get(INICIO);
         }
         return null;
     }

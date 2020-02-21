@@ -1,9 +1,10 @@
 package com.victorlopez.Ejercicio3;
 
-public interface IPila<String> {
-    String push(String e);
-    String pop();
+public interface IPila<T> {
+    T push(T t);
+    T pop();
     int size();
-    String top();
+    T top();
     boolean empty();
+    String toString();
 }

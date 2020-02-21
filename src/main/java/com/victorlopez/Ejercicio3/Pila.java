@@ -2,8 +2,8 @@ package com.victorlopez.Ejercicio3;
 
 import java.util.ArrayList;
 
-public class Pila implements IPila<String>  {
-    private ArrayList<String> pila;
+public class Pila<T> implements IPila<T>  {
+    private ArrayList<T> pila;
 
     public Pila() {
         this.pila = new ArrayList();
@@ -13,19 +13,19 @@ public class Pila implements IPila<String>  {
     }
 
     @Override
-    public String push(String e) {
+    public T push(T e) {
         pila.add(e);
         return e;
     }
 
     @Override
-    public String pop() {
+    public T pop() {
         if (!empty()){
-            String aux = top();
+            T aux = top();
             pila.remove(pila.get(size() - 1));
             return aux;
         }
-        return "No hay elementos en la pila";
+        return null;
     }
 
     @Override
@@ -41,11 +41,11 @@ public class Pila implements IPila<String>  {
     }
 
     @Override
-    public String top() {
+    public T top() {
         if(!empty()){
             return pila.get(size() -1);
         }
-        return "No hay elementos en la pila";
+        return null;
     }
 
     @Override

@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc2a47b-2b39-4d86-bafc-b3560320a8de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio3/IPila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio3/Pila.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio4/Cola.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio4/ICola.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio3/IPila.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio3/IPila.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio3/Pila.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio3/Pila.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio3/IPila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio3/IPila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio3/Pila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio3/Pila.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +62,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio01" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.victorlopez.Ejercicio02.Main" />
       <module name="tema10.main" />
@@ -76,6 +89,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.victorlopez.Ejercicio4.Main" />
+      <module name="tema10.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.victorlopez.Ejercicio4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.victorlopez.Ejercicio01.Main" />
       <module name="tema10.main" />
@@ -91,6 +117,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
@@ -112,10 +139,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1264" y="265" width="544" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1582281197770">
+    <state x="1264" y="265" width="544" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1582304361506">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1264" y="265" width="544" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582281197770" />
+    <state x="1264" y="265" width="544" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582304361506" />
     <state x="1011" y="480" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582061185167">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -124,22 +151,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1582061098515" />
-    <state width="881" height="436" key="GridCell.Tab.0.bottom" timestamp="1582281224327">
+    <state width="881" height="433" key="GridCell.Tab.0.bottom" timestamp="1582306174936">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="436" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582281224327" />
-    <state width="881" height="436" key="GridCell.Tab.0.center" timestamp="1582281224327">
+    <state width="881" height="433" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582306174936" />
+    <state width="881" height="433" key="GridCell.Tab.0.center" timestamp="1582306174935">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="436" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582281224327" />
-    <state width="881" height="436" key="GridCell.Tab.0.left" timestamp="1582281224327">
+    <state width="881" height="433" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582306174935" />
+    <state width="881" height="433" key="GridCell.Tab.0.left" timestamp="1582306174935">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="436" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582281224327" />
-    <state width="881" height="436" key="GridCell.Tab.0.right" timestamp="1582281224327">
+    <state width="881" height="433" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582306174935" />
+    <state width="881" height="433" key="GridCell.Tab.0.right" timestamp="1582306174936">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="436" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582281224327" />
+    <state width="881" height="433" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582306174936" />
     <state width="1807" height="334" key="GridCell.Tab.1.bottom" timestamp="1582130735066">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -160,9 +187,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1582126073595" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1582208935134">
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1582295103631">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582208935134" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582295103631" />
   </component>
 </project>

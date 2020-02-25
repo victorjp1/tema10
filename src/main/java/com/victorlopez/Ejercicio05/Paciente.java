@@ -1,11 +1,7 @@
 package com.victorlopez.Ejercicio05;
 
-import com.victorlopez.Sexo;
-
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.Year;
-import java.util.GregorianCalendar;
 
 public class Paciente {
     private int id;
@@ -24,6 +20,54 @@ public class Paciente {
         this.peso = peso;
     }
 
+    /**
+     * Método para saber la altura del paciente en metros
+     * @return devuelve la altura en metros del paciente
+     */
+    public double getAltura() {
+        return altura;
+    }
+
+    /**
+     * Método que devuelve el sexo del paciente
+     * @return devolvemos el sexo del paciente como un enumerado
+     */
+    public Sexo getSexo() {
+        return sexo;
+    }
+
+    /**
+     * Método que devuelve el id del paciente
+     * @return devuelve un entero que es el id del paciente
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * Método para valorar el peso del paciente
+     * @param p paciente a valorar
+     * @return devolvemos un double, que es el IMC del paciente
+     */
+    public static double valorarPeso(Paciente p){
+        double altura = p.getAltura();
+        double peso = p.getPeso();
+        double IMC = peso / (altura * altura);
+        return IMC;
+    }
+
+    /**
+     * Devuelve el peso del paciente
+     * @return devolvemos un double que es el peso del paciente
+     */
+    public double getPeso() {
+        return peso;
+    }
+
+    /**
+     * Método to String del paciente
+     * @return devolvemos el String formado
+     */
     @Override
     public String toString() {
         int edad = calcularEdad();
@@ -37,7 +81,20 @@ public class Paciente {
                 ", peso =" + peso +
                 '}';
     }
-    public int calcularEdad(){
+
+    /**
+     * Método que devuelve la edad del paciente
+     * @return entero con la edad del paciente
+     */
+    public int getEdad(){
+        return calcularEdad();
+    }
+
+    /**
+     * Método para calcular la edad del paciente a través de la fecha de nacimiento
+     * @return devolvemos un entero, la edad del paciente
+     */
+    private int calcularEdad(){
         LocalDate ahora = LocalDate.now();
         Period periodo = Period.between(fechaNacimiento, ahora);
         int a = periodo.getYears();

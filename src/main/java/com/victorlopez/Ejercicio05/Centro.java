@@ -74,7 +74,7 @@ public class Centro {
     public String toString() {
         String aux = "";
         for (int i = 0; i < pacientes.size() ; i++) {
-            aux += pacientes.get(i).toString();
+            aux += pacientes.get(i).toString() + "\n";
         }
         return aux;
     }

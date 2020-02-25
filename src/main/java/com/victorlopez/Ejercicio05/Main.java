@@ -34,7 +34,7 @@ public class Main {
                    eliminarPaciente();
                    break;
                case 3:
-                   System.out.println(c1.pacientesPorSexo(c1.getPacientes()).toString());
+                   imprimirPorSexo(c1.pacientesPorSexo(c1.getPacientes()));
                    break;
                case 4:
                    int[] mayorMenor = c1.mayorMenor();
@@ -45,11 +45,11 @@ public class Main {
                    imprimirIMC(m);
                    break;
                case 6:
+                   System.out.println(c1.toString());
+                   Lib.pausa();
+                   Lib.limpiarPantalla();
                    break;
                case 7:
-                   System.out.println(c1.toString());
-                   break;
-               case 8:
                    buscarPorId();
                    break;
                case 0:
@@ -59,7 +59,12 @@ public class Main {
 
         }while(!salir);
     }
-
+    public static void imprimirPorSexo(int[] a){
+        System.out.println("Existen " + a[0] + " pacientes de sexo masculino");
+        System.out.println("Existen " + a[1] + " pacientes de sexo femenino");
+        Lib.pausa();
+        Lib.limpiarPantalla();
+    }
     /**
      * Método para imprimir la posición del paciente mayor y menor
      * @param a array con resultados.
@@ -67,6 +72,8 @@ public class Main {
     public static void imprimirMayorMenor(int[] a){
         System.out.println("El paciente de mayor edad se encuentra en la posición: " + a[1]);
         System.out.println("El paciente de menor edad se encuentra en la posición: " + a[0]);
+        Lib.pausa();
+        Lib.limpiarPantalla();
     }
 
     /**
@@ -90,6 +97,8 @@ public class Main {
             case ERROR:
                 System.out.println("No se ha encontrado el paciente");
         }
+        Lib.pausa();
+        Lib.limpiarPantalla();
     }
 
     /**
@@ -108,6 +117,8 @@ public class Main {
         int id = pedirId();
         Paciente p = c1.buscarPorId(id);
         imprimirResultadoBuscar(p);
+        Lib.pausa();
+        Lib.limpiarPantalla();
     }
 
     /**
@@ -120,6 +131,8 @@ public class Main {
         }else{
             System.out.println(p.toString());
         }
+        Lib.pausa();
+        Lib.limpiarPantalla();
     }
 
     /**
@@ -141,6 +154,8 @@ public class Main {
         }else{
             System.out.println("No existe un paciente con ese ID");
         }
+        Lib.pausa();
+        Lib.limpiarPantalla();
     }
 
     /**
@@ -260,20 +275,24 @@ public class Main {
     public static Sexo pedirSexo() {
         Sexo sexo = Sexo.M;
         do {
-            System.out.println("Sexo ([M-F]: ");
-            char s = lector.nextLine().toLowerCase().charAt(0);
-            if (s == 'm') {
+            try{
+                System.out.println("Sexo ([M-F]: ");
+                char s = lector.nextLine().toLowerCase().charAt(0);
+                if (s == 'm') {
+                    sexo = Sexo.M;
+                    validado = true;
+                } else if (s == 'f') {
+                    sexo = Sexo.F;
+                    validado = true;
+                } else if (s == ' '){
+                    sexo = Sexo.M;
+                    validado = true;
+                }else {
+                    validado = false;
+                    System.out.println("Debe indicar ' ' , 'M' ó 'F'");
+                }
+            }catch(StringIndexOutOfBoundsException siobe){
                 sexo = Sexo.M;
-                validado = true;
-            } else if (s == 'f') {
-                sexo = Sexo.F;
-                validado = true;
-            } else if (s == ' '){
-                sexo = Sexo.M;
-                validado = true;
-            }else {
-                validado = false;
-                System.out.println("Debe indicar ' ' , 'M' ó 'F'");
             }
         } while (!validado);
         return sexo;
@@ -313,9 +332,8 @@ public class Main {
                     System.out.println("3. Pacientes por sexo");
                     System.out.println("4. Mayor a menor");
                     System.out.println("5. Indice de masa corporal");
-                    System.out.println("6. Edad en años de un paciente");
-                    System.out.println("7. Mostrar todos los pacientes");
-                    System.out.println("8. Buscar por ID");
+                    System.out.println("6. Mostrar todos los pacientes");
+                    System.out.println("7. Buscar por ID");
                     System.out.println("----------------------------------");
                     System.out.println("0. Salir");
                     opcion = Integer.parseInt(lector.nextLine());

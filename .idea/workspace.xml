@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc2a47b-2b39-4d86-bafc-b3560320a8de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio05/IMCMensaje.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -10,14 +9,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio05/Centro.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio05/Centro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio05/IMCMensaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio05/IMCMensaje.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio05/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio05/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio05/Paciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio05/Paciente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio05/Centro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio05/Centro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio05/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio05/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio05/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio05/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Sexo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio05/Sexo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,22 +167,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1582533580642" />
-    <state width="1807" height="166" key="GridCell.Tab.0.bottom" timestamp="1582538594484">
+    <state width="1807" height="659" key="GridCell.Tab.0.bottom" timestamp="1582628018632">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="166" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582538594484" />
-    <state width="1807" height="166" key="GridCell.Tab.0.center" timestamp="1582538594484">
+    <state width="1807" height="659" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582628018632" />
+    <state width="1807" height="659" key="GridCell.Tab.0.center" timestamp="1582628018632">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="166" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582538594484" />
-    <state width="1807" height="166" key="GridCell.Tab.0.left" timestamp="1582538594483">
+    <state width="1807" height="659" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582628018632" />
+    <state width="1807" height="659" key="GridCell.Tab.0.left" timestamp="1582628018632">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="166" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582538594483" />
-    <state width="1807" height="166" key="GridCell.Tab.0.right" timestamp="1582538594484">
+    <state width="1807" height="659" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582628018632" />
+    <state width="1807" height="659" key="GridCell.Tab.0.right" timestamp="1582628018632">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="166" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582538594484" />
+    <state width="1807" height="659" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582628018632" />
     <state width="1807" height="334" key="GridCell.Tab.1.bottom" timestamp="1582130735066">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

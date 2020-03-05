@@ -49,7 +49,7 @@ public class Paciente {
      * @param p paciente a valorar
      * @return devolvemos un double, que es el IMC del paciente
      */
-    public static double valorarPeso(Paciente p){
+    public static double valorarIMC(Paciente p){
         double altura = p.getAltura();
         double peso = p.getPeso();
         double IMC = peso / (altura * altura);

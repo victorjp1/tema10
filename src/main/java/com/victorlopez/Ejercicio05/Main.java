@@ -343,7 +343,7 @@ public class Main {
                     System.out.println("Introduce una de las opciones del menú");
                 }
             }while(!validado);
-        }while(opcion <= 0 && opcion >= 6);
+        }while(opcion <= 0 && opcion >= 7);
         return opcion;
     }
 }

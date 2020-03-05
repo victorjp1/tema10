@@ -118,15 +118,15 @@ public class Centro {
     public IMCMensaje ICM(int id){
         for (int i = 0; i < pacientes.size() ; i++) {
             if (pacientes.get(i).getId() == id){
-                double IMC = Paciente.valorarPeso(pacientes.get(i));
+                double IMC = Paciente.valorarIMC(pacientes.get(i));
                 if (IMC < 18.5){
                     return IMCMensaje.INSUFICIENTE;
                 }else if(IMC < 25){
-                    return IMCMensaje.NORMAL.NORMAL;
+                    return IMCMensaje.NORMAL;
                 }else if (IMC < 27){
                     return IMCMensaje.GRADO1;
                 }else if (IMC < 27){
-                    return IMCMensaje.NORMAL.GRADO2;
+                    return IMCMensaje.GRADO2;
                 }else{
                     return IMCMensaje.GRADO3;
                 }

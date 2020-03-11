@@ -8,4 +8,12 @@ public class Hijo {
         this.nombre = nombre;
         this.edad = edad;
     }
+
+    @Override
+    public String toString() {
+        return "Hijo{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                '}';
+    }
 }

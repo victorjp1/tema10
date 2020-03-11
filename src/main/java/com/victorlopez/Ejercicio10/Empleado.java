@@ -17,10 +17,15 @@ public class Empleado {
         this.apellidos = apellidos;
         this.fechaNacimiento = fechaNacimiento;
         this.sueldo = sueldo;
+        hijos = new ArrayList<>();
     }
 
     public int getDni() {
         return dni;
+    }
+
+    public void setSueldo(double sueldo) {
+        this.sueldo = sueldo;
     }
 
     public String getNombre() {
@@ -42,8 +47,20 @@ public class Empleado {
     public ArrayList<Hijo> getHijos() {
         return hijos;
     }
-    public void addHijos(Hijo hijo){
-        hijos.add(hijo);
+    public void addHijo(Hijo hijo){
+        this.hijos.add(hijo);
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "dni=" + dni +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                ", sueldo=" + sueldo +
+                ", hijos=" + hijos.toString() +
+                '}' + "\n";
     }
 }
 

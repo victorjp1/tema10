@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc2a47b-2b39-4d86-bafc-b3560320a8de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio09/Diccionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio09/Juego.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio09/Jugador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio09/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Empresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Hijo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/EjemploComparable/Libro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/EjemploComparable/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -18,8 +12,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio08/Diccionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio08/Diccionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio08/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/victorlopez/Ejercicio08/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Hijo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Hijo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorlopez/Ejercicio10/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.victorlopez.Ejercicio07.Main" />
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.victorlopez.EjemploComparable.Main" />
       <module name="tema10.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.victorlopez.Ejercicio07.*" />
+          <option name="PATTERN" value="com.victorlopez.EjemploComparable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -158,10 +154,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1264" y="265" width="544" height="665" key="#com.intellij.ide.util.MemberChooser" timestamp="1583840009445">
+    <state x="1264" y="265" width="544" height="665" key="#com.intellij.ide.util.MemberChooser" timestamp="1583865313181">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1264" y="265" width="544" height="665" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1583840009445" />
+    <state x="1264" y="265" width="544" height="665" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1583865313181" />
     <state x="1011" y="480" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582061185167">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -178,22 +174,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583346838819" />
-    <state width="881" height="591" key="GridCell.Tab.0.bottom" timestamp="1583856015061">
+    <state width="1807" height="803" key="GridCell.Tab.0.bottom" timestamp="1583940745895">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="591" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583856015061" />
-    <state width="881" height="591" key="GridCell.Tab.0.center" timestamp="1583856015059">
+    <state width="1807" height="803" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583940745895" />
+    <state width="1807" height="803" key="GridCell.Tab.0.center" timestamp="1583940745894">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="591" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583856015059" />
-    <state width="881" height="591" key="GridCell.Tab.0.left" timestamp="1583856015058">
+    <state width="1807" height="803" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583940745894" />
+    <state width="1807" height="803" key="GridCell.Tab.0.left" timestamp="1583940745894">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="591" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583856015058" />
-    <state width="881" height="591" key="GridCell.Tab.0.right" timestamp="1583856015060">
+    <state width="1807" height="803" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583940745894" />
+    <state width="1807" height="803" key="GridCell.Tab.0.right" timestamp="1583940745895">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="591" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583856015060" />
+    <state width="1807" height="803" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583940745895" />
     <state width="1807" height="334" key="GridCell.Tab.1.bottom" timestamp="1582130735066">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

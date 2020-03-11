@@ -22,13 +22,13 @@ public class Main {
                     nuevoEmpleado();
                     break;
                 case 2:
-                    //nuevoHijo();
+                    nuevoHijo();
                     break;
                 case 3:
-                    //modificarSueldo();
+                    modificarSueldo();
                     break;
                 case 4:
-                    //borrarEmpleado();
+                    borrarEmpleado();
                     break;
                 case 5:
                     //borrarHijo();
@@ -36,11 +36,49 @@ public class Main {
                 case 6:
                     //consultas();
                     break;
+                case 7:
+                    System.out.println(empresa.toString());
+                    break;
                 case 0:
                     salir = true;
                     break;
             }
         }while (!salir);
+    }
+    public static void borrarEmpleado(){
+        int dni = pedirDni();
+        if (empresa.borrarEmpleado(dni)){
+            System.out.println("El empleado se ha borrado correctamente");
+        }else{
+            System.out.println("El empleado no se encuentra en la base de datos!");
+        }
+    }
+    public static void modificarSueldo(){
+        int dni = pedirDni();
+        double sueldo;
+        Empleado e = empresa.buscarDni(dni);
+        if (e == null){
+            System.out.println("El empleado no existe en la base de datos");
+        }else{
+            sueldo = pedirSueldo();
+            e.setSueldo(sueldo);
+            System.out.println("El sueldo se ha modificado correctamente");
+        }
+        Lib.pausa();
+        Lib.limpiarPantalla();
+    }
+    public static void nuevoHijo(){
+        int dni = pedirDni();
+        Empleado e = empresa.buscarDni(dni);
+        if (e == null){
+            System.out.println("Ese empleado no está registrado en la base de datos");
+        }else{
+            System.out.println("Ahora empezamos con los datos del hijo: ");
+            String nombre = pedirNombre();
+            int edad = pedirEdad();
+            Hijo h = new Hijo(nombre,edad);
+            e.addHijo(h);
+        }
     }
     public static void nuevoEmpleado(){
         int dni = pedirDni();
@@ -81,7 +119,7 @@ public class Main {
             nombre = pedirNombre();
             edad = pedirEdad();
             Hijo h = new Hijo(nombre,edad);
-            e.addHijos(h);
+            e.addHijo(h);
         }
     }
     public static int pedirEdad(){
@@ -147,7 +185,7 @@ public class Main {
         String apellidos;
         do {
             System.out.println("Introduce los apellidos:");
-            apellidos = lector.nextLine();
+            apellidos = lector.nextLine().trim().toUpperCase();
             if (apellidos.length() > 2){
                 validado = true;
             }else{
@@ -167,7 +205,7 @@ public class Main {
         String nombre;
         do {
             System.out.println("Introduce el nombre:");
-            nombre = lector.nextLine();
+            nombre = lector.nextLine().trim().toUpperCase();
             if (nombre.length() >= 3){
                 validado = true;
             }else{
@@ -184,7 +222,7 @@ public class Main {
         int dni = -1;
         do {
             try{
-                System.out.println("Introduce el número de DNI");
+                System.out.println("Introduce el número de DNI del empleado: ");
                 dni = Integer.parseInt(lector.nextLine());
                 if (dni > 0){
                     validado = true;
@@ -214,13 +252,14 @@ public class Main {
                 System.out.println("1. Nuevo empleado");
                 System.out.println("2. Nuevo hijo");
                 System.out.println("3. Modificar sueldo");
-                System.out.println("4.Borrar empleado");
+                System.out.println("4. Borrar empleado");
                 System.out.println("5. Borrar hijo");
                 System.out.println("6. Consultas");
+                System.out.println("7. Mostrar Empleados");
                 System.out.println("-----------------------");
                 System.out.println("0. Salir");
                 opcion = Integer.parseInt(lector.nextLine()) ;
-                if (opcion >= 0 && opcion <= 6){
+                if (opcion >= 0 && opcion <= 7){
                     validado = true;
                 }else{
                     validado = false;

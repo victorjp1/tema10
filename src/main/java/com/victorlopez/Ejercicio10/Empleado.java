@@ -4,14 +4,14 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Empleado {
-    private int dni;
+    private String dni;
     private String nombre;
     private String apellidos;
     private LocalDate fechaNacimiento;
     private double sueldo;
     private ArrayList<Hijo> hijos;
 
-    public Empleado(int dni, String nombre, String apellidos, LocalDate fechaNacimiento, double sueldo) {
+    public Empleado(String dni, String nombre, String apellidos, LocalDate fechaNacimiento, double sueldo) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -20,7 +20,7 @@ public class Empleado {
         hijos = new ArrayList<>();
     }
 
-    public int getDni() {
+    public String getDni() {
         return dni;
     }
 

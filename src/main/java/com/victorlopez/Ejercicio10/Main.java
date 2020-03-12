@@ -46,7 +46,7 @@ public class Main {
         }while (!salir);
     }
     public static void borrarEmpleado(){
-        int dni = pedirDni();
+        String dni = pedirDni();
         if (empresa.borrarEmpleado(dni)){
             System.out.println("El empleado se ha borrado correctamente");
         }else{
@@ -54,7 +54,7 @@ public class Main {
         }
     }
     public static void modificarSueldo(){
-        int dni = pedirDni();
+        String dni = pedirDni();
         double sueldo;
         Empleado e = empresa.buscarDni(dni);
         if (e == null){
@@ -68,7 +68,7 @@ public class Main {
         Lib.limpiarPantalla();
     }
     public static void nuevoHijo(){
-        int dni = pedirDni();
+        String dni = pedirDni();
         Empleado e = empresa.buscarDni(dni);
         if (e == null){
             System.out.println("Ese empleado no está registrado en la base de datos");
@@ -81,7 +81,7 @@ public class Main {
         }
     }
     public static void nuevoEmpleado(){
-        int dni = pedirDni();
+        String dni = pedirDni();
         if (empresa.buscarDni(dni) != null){
             System.out.println("Ya existe un empleado con ese dni!!");
         }else{
@@ -218,30 +218,47 @@ public class Main {
         return nombre;
     }
 
-    public static int pedirDni(){
-        int dni = -1;
+    public static String pedirDni(){
+        String dni;
         do {
-            try{
+
                 System.out.println("Introduce el número de DNI del empleado: ");
-                dni = Integer.parseInt(lector.nextLine());
-                if (dni > 0){
+                dni = lector.nextLine();
+                if (compruebaNIF(dni)){
                     validado = true;
                 }else{
                     validado = false;
-                    System.out.println("No puede ser negativo");
+                    System.out.println("Introduce el número de DNI:");
+                    System.out.println("Ejemplo: 54375561");
                     Lib.pausa();
                     Lib.limpiarPantalla();
                 }
-            }catch (NumberFormatException nfe){
-                validado = false;
-                System.out.println("Introduce el número de DNI:");
-                System.out.println("Ejemplo: 54375561");
+
                 Lib.pausa();
                 Lib.limpiarPantalla();
-            }
         }while (!validado);
         return dni;
     }
+    public static boolean compruebaNIF(String nif) {
+        String dniString = "";
+        // Cogemos como letra el último caracter del NIF
+        char letra = nif.charAt(nif.length()-1);
+        char c;
+        for(int i = 0; i < nif.length(); i++) {
+            // Si es un dígito lo añadimos a dniString
+            c = nif.charAt(i);
+            if(Character.isDigit(c)) {
+                dniString = dniString + c;
+            }
+        }
+        return letra == obtenerLetraDNI(Integer.parseInt(dniString));
+    }
+
+    public static char obtenerLetraDNI(int dni) {
+        String tabla = new String("TRWAGMYFPDXBNJZSQVHLCKE");
+        return tabla.charAt(dni % 23);
+    }
+
     public static int mostrarMenu(){
         int opcion = -1;
         do {

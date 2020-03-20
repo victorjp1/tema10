@@ -14,9 +14,9 @@ public class Main {
     static Empresa empresa;
     public static void main(String[] args) {
         lector = new Scanner(System.in);
-        casosPrueba();
         int opcion;
         empresa = new Empresa();
+        casosPrueba();
         boolean salir = false;
         do {
             opcion = mostrarMenu();//Opcion del menu validada
@@ -53,7 +53,21 @@ public class Main {
      * Casos de prueba para la app
      */
     public static void casosPrueba(){
-
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate fechaNac = LocalDate.parse("15/08/1993", fmt);
+        LocalDate fechaNac2 = LocalDate.parse("15/08/1996", fmt);
+        LocalDate fechaNac3 = LocalDate.parse("15/08/2000", fmt);
+        LocalDate fechaNac4 = LocalDate.parse("03/02/1995", fmt);
+        LocalDate fechaNac5 = LocalDate.parse("27/12/2008", fmt);
+        empresa.addEmpleado(new Empleado("54375561L", "victor", "lopez fornes",fechaNac, 1000));
+        empresa.addEmpleado(new Empleado("28994850S", "jairo", "fornes costa",fechaNac2, 2000));
+        empresa.addEmpleado(new Empleado("74011022N", "mario", "salva agulles",fechaNac3, 3000));
+        empresa.addEmpleado(new Empleado("54375926Q", "francesc", "mulet cabrera",fechaNac4, 4000));
+        empresa.addEmpleado(new Empleado("53944153E", "maria rosa", "fornes perez",fechaNac5, 5000));
+        empresa.buscarDni("54375561L").addHijo(new Hijo("antonio ramirez", 17));
+        empresa.buscarDni("54375926Q").addHijo(new Hijo("paco reig", 22));
+        empresa.buscarDni("54375926Q").addHijo(new Hijo("luisa larbonell", 25));
+        empresa.buscarDni("74011022N").addHijo(new Hijo("cristian garcia", 15));
     }
 
     /**
@@ -92,7 +106,7 @@ public class Main {
     public static void buscarHijosMenores(){
         ArrayList<Empleado> encontrados = empresa.buscarPorHijosMenores();
         if (encontrados.size() == 0){
-            System.out.println("No se han encontrado empleados");
+            System.out.println("No se han encontrado empleados con hijos menores de edad");
         }else{
             System.out.println(encontrados.toString());
         }
@@ -206,7 +220,7 @@ public class Main {
                 System.out.println("* CONSULTAS EMPLEADOS *");
                 System.out.println("***********************");
                 System.out.println("1. Buscar por NIF");
-                System.out.println("2. Buscar por número");
+                System.out.println("2. Buscar por nombre");
                 System.out.println("3. Buscar por rango de edad");
                 System.out.println("4. Buscar por rango de sueldo");
                 System.out.println("5. Buscar por hijos menores de edad");
@@ -518,6 +532,10 @@ public class Main {
         return tabla.charAt(dni % 23);
     }
 
+    /**
+     * Método que muestra el menú principal de la app
+     * @return opcion ya validada
+     */
     public static int mostrarMenu(){
         int opcion = -1;
         do {

@@ -9,8 +9,20 @@ public class Aula {
         this.m2 = m2;
     }
 
+    /**
+     * Método para obtener el id del aula
+     * @return
+     */
     public int getId() {
         return id;
+    }
+
+    /**
+     * Método para obtener los metros cuadrados del aula
+     * @return
+     */
+    public double getM2() {
+        return m2;
     }
 
     @Override

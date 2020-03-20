@@ -39,7 +39,7 @@ public class Empresa {
             e = empleados.get(i);
             encontrado = false;
             for (int j = 0; j < e.getHijos().size(); j++) {
-                edadHijo = e.getHijos().get(i).getEdad();
+                edadHijo = e.getHijos().get(j).getEdad();
                 if (edadHijo < 18 && !encontrado){
                     encontrados.add(e);
                     encontrado = true;

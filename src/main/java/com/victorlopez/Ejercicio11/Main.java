@@ -171,8 +171,8 @@ public class Main {
      * @param a alumnos a imprimir
      */
     public static void imprimirAlumnos(ArrayList<Alumno> a){
-        for (int i = 0; i < a.size(); i++) {
-            System.out.println(a.get(i).toString());
+        for (Alumno alumno : a) {
+            System.out.println(alumno.toString());
         }
     }
 
@@ -247,8 +247,8 @@ public class Main {
         do {
             System.out.println("Empezamos con los datos del grupo");
             int id = pedirId();
-            if (c1.existGrupo(id)){
-                Grupo g = c1.buscarGrupo(id);
+            Grupo g = c1.buscarGrupo(id);
+            if (g != null){
                 System.out.println("Seguimos con los datos del aula:");
                 id = pedirId();
                 Aula a = c1.buscarAula(id);
@@ -293,7 +293,8 @@ public class Main {
         int id;
         System.out.println("Empezamos con los datos del grupo");
         id = pedirId();
-        if (c1.existGrupo(id)){
+        Grupo g = c1.buscarGrupo(id);
+        if (g != null){
             validado = false;
             System.out.println("Ya existe un grupo con ese id");
         }else{
@@ -891,8 +892,9 @@ public class Main {
                 try{
                     System.out.println("Introduce el código de la asignatura:");
                     id = Integer.parseInt(lector.nextLine());
-                    if (c1.existAsignatura(id)){
-                        asignaturas.add(c1.buscarAsignatura(id));
+                    Asignatura a = c1.buscarAsignatura(id);
+                    if (a != null){
+                        asignaturas.add(a);
                         System.out.println("Asignatura " + (i+1) + " encontrada");
                     }else{
                         validado = false;
@@ -943,7 +945,8 @@ public class Main {
             try{
                 System.out.println("Introduce el ID del grupo: ");
                 id = Integer.parseInt(lector.nextLine());
-                if (c1.existGrupo(id)){
+                Grupo g = c1.buscarGrupo(id);
+                if (g != null){
                     return c1.buscarGrupo(id);
                 }else{
                     validado = false;
@@ -953,6 +956,8 @@ public class Main {
                 validado = false;
                 System.out.println("El ID es numérico");
             }
+            Lib.pausa();
+            Lib.limpiarPantalla();
         }while (!validado);
         return null;
     }

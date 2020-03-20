@@ -11,14 +11,26 @@ public class Asignatura {
         this.profesor = profesor;
     }
 
+    /**
+     * Método para obtener el ID de la asignatura
+     * @return ID de la asignatura
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Método para cambiar el profesor de la asignatura
+     * @param profesor profesor a cambiar
+     */
     public void setProfesor(Profesor profesor) {
         this.profesor = profesor;
     }
 
+    /**
+     * Método para obtener el profesor que imparte la asignatura
+     * @return profesor
+     */
     public Profesor getProfesor() {
         return profesor;
     }

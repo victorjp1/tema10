@@ -458,6 +458,10 @@ public class Main {
         return nombre;
     }
 
+    /**
+     * Método para pedir el DNI
+     * @return dni validado
+     */
     public static String pedirDni(){
         String dni;
         do {
@@ -483,6 +487,12 @@ public class Main {
         }while (!validado);
         return dni;
     }
+
+    /**
+     * Método que comprueba si el NIF es correcto
+     * @param nif nif a comprobar
+     * @return boolean que dice si es correcto o no
+     */
     public static boolean compruebaNIF(String nif) {
         StringBuilder dniString = new StringBuilder();
         // Cogemos como letra el último caracter del NIF
@@ -498,6 +508,11 @@ public class Main {
             return letra == obtenerLetraDNI(Integer.parseInt(dniString.toString()));
     }
 
+    /**
+     * Obtener la letra correspondiente del dni
+     * @param dni dni a valorar
+     * @return letra correcta de deni
+     */
     public static char obtenerLetraDNI(int dni) {
         String tabla = "TRWAGMYFPDXBNJZSQVHLCKE";
         return tabla.charAt(dni % 23);
